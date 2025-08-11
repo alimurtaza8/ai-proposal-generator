@@ -1,0 +1,10 @@
+# .gitignore (recommended)
+node_modules/
+.next/
+dist/
+build/
+.env
+.env.local
+.vscode/
+.DS_Store
+Thumbs.db

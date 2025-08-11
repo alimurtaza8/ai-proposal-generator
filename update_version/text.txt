@@ -1,0 +1,82 @@
+Ok Now Listen I created the finanical Proposal system for my client which is all good working its backend on python and I created frontend in nextjs all good But few things that should improve ok SO
+NOW WE NEED TO improve the thing Listen 
+
+First See the financial Project requirment which I already all develop
+" " "
+(0:03) This is how we start doing the financial proposal. (0:08) Once the user chooses the financial proposal from the page, this text should appear. (0:18) Welcome to Mutawazi Financial Pricing Model, this tool, da, da, da, da, da.
+(0:24) The end user needs to fill in this checklist, okay? (0:28) If 6 out of 7 was answered yes, it should give it partial. (0:38) If it's 7 out of 7, it should give it ready. (0:41) If it's 5 out of 7 or less, it should not allow it to proceed with the form filling, okay? (0:49) So this part is the first part always, okay? (0:53) You don't need to fill in or add anything on the front end with this, which sheet to use.
+(0:58) This is just for my indication. (1:01) So what's on the front end, everything from here up until here, okay? (1:06) And the logo is at the bottom, at the top of the form, okay? (1:13) Now the end user needs to fill in the metadata, which is this part, in both Arabic and in English, okay? (1:22) Name of the project, client name, type of the project if it's fixed, framework, milestone, times, and material. (1:31) BOQ type if it's deliverable-based, monthly resources-based.
+(1:34) And then they need to fill in the number of deliverables. (1:38) The start and end date, there should be a provision for the end user to choose from the calendar when is the expected start and end date. (1:46) The duration in month is calculated, okay? (1:50) It should give it in calculation.
+(1:53) And created on is the date of creation. (1:56) The RFP code, this is coming from the client. (2:02) They need to give us the code of the RFP.
+(2:05) And the virgin name, this is automated. (2:07) This quotation code, this is also automated. (2:10) So anything that's within the metadata that it's showing any formula, this should be done by AI.
+(2:17) Also from the back end, I want to be able to fill in the overheads cost. (2:24) So this is I filled myself, okay? (2:27) But I need a provision that the end user does not see where I can change the overheads and adjust the overheads like salaries, utilities, transportation, visas, and so on, okay? (2:39) Once the end user filled this metadata, the next step is to design the cash flows. (2:47) The cash flow is basically planning how much money we will spend every month or every quarter or every year or based on deliverable, okay? (2:58) So if you unhide all the sheets, you will see also cash flow for deliverables.
+(3:04) It's similar to monthly, but it's different from the deliverable name. (3:09) The end user need to fill in the deliverable name, the due date of the deliverable, and the amount of cashing they expect from the deliverable once it's completed. (3:21) Within the project, they need to define the salaries.
+(3:24) They need to define the tools needed and need to define any other expenses. (3:29) The overheads is depending on the base setup of the overheads. (3:36) So the filling that I've done here, it pulls it to the cash flow, and then it calculates the overhead.
+(3:43) The cash out is basically the add-up of salaries, tools, others, and overhead. (3:49) The net flow is the difference between the cash in and cash out, okay? (3:54) And the cumulative net flow is basically... (3:58) Sorry, one second. (4:00) The cumulative net flow is the difference between cash in cash out last month, cash in cash out this month, and the total of the net flow, okay? (4:12) Similar to here, the cumulative net flow is cash in cash out plus the cumulative net flow.
+(4:20) So this one should be cash in cash out plus this one, okay? (4:30) But since there is zero, it is showing zero, okay? (4:35) And cash flow monthly as well. (4:38) This gives the end user the plan of cash flow, okay? (4:43) Once they completed these two sheets, they need to go to the financial proposal, okay? (4:50) In the financial proposal, this one is pulled from the project setup. (4:56) Date is pulled from today's date.
+(4:59) Number of the offer, the code of the offer is this. (5:04) And the RFP code is this. (5:09) The entity name is this, okay? (5:12) They need to list down all the deliverables as per the RFP.
+(5:17) So, for example, if I showed you Tamkeen project, this project, okay? (5:27) You will see in the RFP they have already included the BOQ, okay? (5:32) So the end user needs to pull all of these and give it a price, okay? (5:42) This unit price. (5:43) The way they design this unit price, they need to make sure that the cash flow is already planned (5:51) before they are allowed to give unit price for each item, okay? (5:57) And then they can give the final number. (5:59) This is up to the end user to decide, okay? (6:03) This one is the payment terms.
+(6:06) This is distributed as per the end user designing, okay? (6:11) So they need to be able to give each payment a percentage of the project. (6:17) This number is the total amount of the project (6:20) and the percentages of each payment from the total project, okay? (6:26) So this is basically how the financial proposal comes alive. (6:30) You will face some challenges, I am sure.
+(6:33) But please come back to me if you have any other questions. (6:36) I can try and answer them, okay? (6:38) I will also attach this document for you in Upwork for your reference and also this video. (6:47) Thank you.
+" " "
+
+SO NOW LISTEN I CREATED THE python code backend for this which is actually great work Now we need to little change . SO listen when the customer This page "Deliverables & Cost Planning". 
+Than have dropdown list of Service Catalog ok Which I already define in .py code I will send you from client document so no catalog will miss ok
+
+SEE THE CATALOG (THESE ARE REAL REPLACE THESE WITH THE CODE OK THE DEFINE ONE IN CODE IS NOT GOOD AND NOT REAL THESE ARE REAL OK)
+" ""
+excel sheet :
+
+
+ID	Services 	Serivces Discription 	Unit	Services Duration (Months)	Prices (SAR)
+1.0	AI Strategy & Governance 			24	 80,000.00 
+1.1	AI Governance Framework Development 	This includes developing AI governance frameworks aligned with international standards (e.g. ISO/IEC 42001:2023) and the client’s vision and objectives	Service	12	 40,000.00 
+1.2	AI Trustworthiness & Risk Assessment 	Incorporates AI risk management models to ensure ethical, bias-mitigated, and secure AI deployment	Service	2	 30,000.00 
+1.3	Ethical AI Policy & Compliance Strategy 	Establishes AI ethics guidelines and ensures alignment with regulatory requirements (e.g. Saudi NDMO policies)	Service	3	 15,000.00 
+1.4	Set up AI Office in compliance with SDAIA 	Assess maturity of AI compliance and set up operating model for AI offices 	Service	2	 10,000.00 
+2.0	AI Project & Portfolio Management 			18	 950,000.00 
+2.1	AI-Driven PMO Setup & Consultancy 	Establishing or upgrading a Project Management Office with AI capabilities for automation and real-time project tracking. (Includes integrating AI tools into project workflows for status reporting and schedule optimization.)	Service	12	 300,000.00 
+2.2	AI Project Tracker & Risk Prediction Tool 	Deployment of an “AI Project Manager” solution that uses predictive analytics to forecast project risks and delays. (For example, AI-based dashboards that predict schedule slippages and resource needs, valued in mid-six figures based on past tech deployments.)	Service	4	 350,000.00 
+2.3	AI Portfolio Roadmap Development 	Creating an AI-enhanced portfolio roadmap with project interdependencies and strategic alignment. (Often delivered as a consulting output rather than a separately priced item.)	Service	10	 400,000.00 
+3.0	AI Risk Management & Compliance 			6	 500,000.00 
+3.1	AI Maturity & Impact Assessment 	Evaluating the organization’s AI maturity level and readiness, and assessing potential impact and risks of AI use cases[6]. (Includes workshops and an AI maturity model assessment.)	Service	2	 200,000.00 
+3.2	AI Risk & Compliance Framework 	Developing tools and processes for AI risk identification, bias mitigation, and compliance monitoring (e.g. TRM – Transformation Risk Manager)	Service	3	 300,000.00 
+3.3	Regulatory Alignment & Audit Preparation 	Ensuring AI initiatives comply with local and international regulations, and preparing documentation for audits or certifications (such as NDMO guidelines or OECD AI principles)	Service	3	 250,000.00 
+4.0	"	AI Enablement & Implementation "			36	 3,000,000.00 
+4.1	AI Solution Design & MVP Development 	End-to-end development of a proof-of-concept or MVP (Minimum Viable Product) for an AI solution tailored to the client’s use case	Solution	2	 725,000.00 
+4.2	Advanced Analytics & BI Integration 	Implementing AI-powered analytics, business intelligence dashboards, and real-time data processing for decision support	Solution	9	 925,000.00 
+4.3	Custom AI Use Case Development 	Developing industry-specific AI use cases or models (e.g. predictive maintenance, customer service chatbots) and integrating them into business processes	Document	10	 600,000.00 
+4.4	User Interface & Experience Implementation 	Building intuitive, multi-language user interfaces for AI applications, ensuring accessibility (e.g. compliance with WCAG standards). 	Software	8	 1,000,000.00 
+4.5	Integration & Deployment 	Integration of AI solutions into the client’s environment (CRM, ERP, etc.), including testing and deployment on cloud or on-prem infrastructure	Software & Hardware	12	 1,250,000.00 
+4.6	Chatbot Development & Automation 	Mutawazi’s ChatBot capabilities are incorporated here as a key AI use-case. Developing a modular conversational AI assistant (e.g. for customer service or internal support) falls under AI Enablement	Subscition	1	 10,000.00 
+5.0	Training & Capacity Building 			36	 400,000.00 
+5.1	AI Competency Development Programs 	A series of workshops, “AI bootcamps,” and hands-on training sessions to build the client team’s AI skills	Service	36	 250,000.00 
+5.2	Executive Leadership Workshops 	High-level seminars for leadership on AI strategy, transformation, and change management	Employee	6	 25,000.00 
+5.3	Certification Training (ISO/IEC 42001) 	Focused training to prepare teams for AI management system certification	Employee	1	 10,000.00 
+5.4	 Certification Training (⁠ISO 14001)	Certified training 	Employee	1	 10,000.00 
+5.5	 Certification Training (⁠ISO 45001)	Certified training 	Employee	1	 10,000.00 
+5.6	 Certification Training (⁠ISO 9001)	Certified training 	Employee	1	 10,000.00 
+5.7	 Certification Training (⁠ISO 50001)	Certified training 	Employee	1	 10,000.00 
+6.0	Data Management & AI Infrastructure 			36	 3,500,000.00 
+6.1	AI/Data Architecture Design 	Designing the overall system and data architecture for AI solutions, including databases, data pipelines, and cloud infrastructure	Service	6	 700,000.00 
+6.2	Data Collection & Integration 	Setting up data integration pipelines to gather and unify data from various sources (internal systems or external APIs) for AI use	Service	12	 675,000.00 
+6.3	Secure Data Storage & Cybersecurity 	Implementing secure data lakes/warehouses and applying cybersecurity best practices (encryption, access controls) to protect sensitive data. 	Software & Hardware	6	 800,000.00 
+6.4	AI Infrastructure & Cloud Deployment 	Provisioning cloud or on-premise environments for AI model training and deployment, ensuring scalability and compliance with data residency requirements	Software & Hardware	18	 700,000.00 
+6.5	Interoperability & API Integration 	Ensuring the AI systems can interconnect with other enterprise systems and external services 	Service	8	 700,000.00 
+6.6	Maintenance & Support Services 	Ongoing technical support, system monitoring, and model maintenance post-implementation	Service	1	 650,000.00 
+					
+
+" " "
+
+
+OK SO It have dropdown in frontend which is in app/financial-proposal/page.tsx of  and which mention all name catalog name and also the option of other so When Someone select the name of the catalog all calulataion will do automatically include overheads from backend  calculation which in this page which is we doing manually will calculated by automatic according to the selected catalog price and duration and other staff ok
+So this will follow for all catalog and all deliveries ok means each delivery have option to add catalog ok
+And have option of dropdown of other where user can add manual ok like we using now ok
+
+AND The important thing is each catalog calcution there should be AI will have like gemini-2.5-flash how will generate message and tell how real world compare this price . means how real world price this and your price this ok... 
+
+SO Create this also I will attach my gemini key on .env ok
+
+
+AND WHEN IT CALCULATED IT HAVE OPTION TO GENERATE AI RESPONSE IN FRONTEND OK
+
