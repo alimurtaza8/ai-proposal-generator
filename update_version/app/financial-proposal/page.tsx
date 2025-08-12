@@ -136,7 +136,8 @@ const [loadingAi, setLoadingAi] = useState<{[key: string]: boolean}>({});
   let alertId = 0;
 
   // API configuration
-  const API_BASE = process.env.NEXT_PUBLIC_API_BASE || 'http://localhost:8000/api';
+  // const API_BASE = process.env.NEXT_PUBLIC_API_BASE || 'http://localhost:8000/api';
+  const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL_FINANCE
 
   // Initialize readiness questions
   useEffect(() => {
