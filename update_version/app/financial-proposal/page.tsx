@@ -47,26 +47,34 @@ type Deliverable = {
   isManual?: boolean;  // Add this line to track manual entries
 };
 
-type Service = {
-  id: string;
-  name: string;
-  description: string;
-  price: number;
-  duration: number;
-  unit: string;
-};
+// type Service = {
+//   id: string;
+//   name: string;
+//   description: string;
+//   price: number;
+//   duration: number;
+//   unit: string;
+// };
 
 type PaymentTerm = {
   description: string;
   percentage: number;
 };
 
+// type ProposalItem = {
+//   description: string;
+//   quantity: number;
+//   unitPrice: number;
+//   totalPrice: number;
+// };
+
 type ProposalItem = {
   description: string;
   quantity: number;
   unitPrice: number;
   totalPrice: number;
-};
+    unit_price: number;  
+  total_price: number; 
 
 type ProposalData = {
   offerNumber: string;
@@ -1498,19 +1506,14 @@ const deliverableData = deliverables.map(d => ({
           <td className="p-3 text-gray-700">{index + 1}</td>
           <td className="p-3 text-gray-700">{item.description}</td>
           <td className="p-3 text-gray-700">{item.quantity || 1}</td>
-          {/* <td className="p-3 text-gray-700">
+           <td className="p-3 text-gray-700">
             {(item.unit_price || item.unitPrice || item.total_price || item.totalPrice || 0).toLocaleString()}
           </td>
           <td className="p-3 text-gray-700">
             {(item.total_price || item.totalPrice || item.unit_price || item.unitPrice || 0).toLocaleString()}
-          </td> */}
+          </td> 
 
-<td className="p-3 text-gray-700">
-  {(item.unitPrice || item.totalPrice || 0).toLocaleString()}
-</td>
-<td className="p-3 text-gray-700">
-  {(item.totalPrice || item.unitPrice || 0).toLocaleString()}
-</td>
+
 
         </tr>
       ))}
