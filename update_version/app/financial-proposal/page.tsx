@@ -75,6 +75,7 @@ type ProposalItem = {
   totalPrice: number;
     unit_price: number;  
   total_price: number; 
+};
 
 type ProposalData = {
   offerNumber: string;
